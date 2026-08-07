@@ -1,0 +1,139 @@
+def de_puno():
+    n = int(input("1. Ingrese numero o cod estudiante: "))
+    if n > 0:
+        print ("El numero", n, "es positivo")
+    elif n < 0:
+         print ("El numero", n, "es negativo")
+    elif n == 0:
+         print ("El numero", n, "es 0")
+
+def p_dos():
+    n = int(input("2. Ingrese numero o cod estudiante: "))
+
+    if n % 2 == 0:
+        print ("El numero", n, "es par")
+    else:
+        print ("El numero", n, "es impar")
+
+def p_tres():
+    n = int(input("3. Ingrese numero o cod estudiante: "))
+    fibo = 0
+    fibo2 = 1
+    while fibo2 < n:
+        sec = fibo + fibo2
+        fibo = fibo2
+        fibo2 = sec
+    if n == fibo2 or n == 0:
+        print(n, "si hace parte de la Sucesión de Fibonacci")
+    else:
+        print(n, "no hace parte de la Sucesión de Fibonacci")
+def p_4():
+    n = int(input("4. Ingrese numero o cod estudiante: "))
+    if n < 1:
+        print("Error, ingresa un numero entero positivo")
+        p_4()
+    espri = True
+    
+    for i in range(2,n):
+        if n % 2 == 0:
+            espri = False
+        break
+    if espri and n > 1: print("Es primo") 
+def p_5():
+    x = 0
+    n = int(input("5. Ingrese números 1 o cod estudiante: ")) 
+    m = int(input("Ingrese número 2 o cod estudiante: "))
+    if n < m:
+        for i in range(n + 1,m):
+            x = x + i
+        print("La suma de los intermedios de este intervalo es", x) 
+    elif m < n:
+        for i in range(m + 1 ,n):
+            x = x + i
+        print("La suma de los intermedios de este intervalo es", x) 
+    else:
+        print("La suma de los intermedios de este intervalo es 0")
+def p_6():
+    n = int(input("6. Ingrese numero o cod estudiante: ")) 
+    if n % 2 == 0:
+        print ("El numero", n, "es par")
+        m = n**3
+        print(n,"al cubo es", m )
+    else:
+        print ("El numero", n, "es impar")
+        m = n**2
+        print(n,"al cuadrado es", m )
+def p_7():
+    print("Mi codigo de estudiante es 1000115165")
+    de_puno()
+    p_dos()
+    p_tres()
+    p_4()
+    p_5()
+    p_6()
+def obten_mes(n_mes):
+    if n_mes == 1:
+        return "enero"
+    elif n_mes == 2:
+        return "febrero"
+    elif n_mes == 3:
+        return "marzo"
+    elif n_mes == 4:
+        return "abril"
+    elif n_mes == 5:
+        return "mayo"
+    elif n_mes == 6:
+        return "junio"
+    elif n_mes == 7:
+        return "julio"
+    elif n_mes == 8:
+        return "agosto"
+    elif n_mes == 9:
+        return "septiembre"
+    elif n_mes == 10:
+        return "octubre"
+    elif n_mes == 11:
+        return "noviembre"
+    elif n_mes == 12:
+        return "diciembre"
+    else:
+        return "mes no valido"
+def p_8():
+    dia = int(input("dia: "))
+    mes = int(input("mes: ")) 
+    year = int(input("year: ")) 
+    code = input("codigo de estudiante: ")
+    nom_mes = obten_mes(mes)
+    print(nom_mes + code)
+def p_9():
+    mes = input("Ingresa el mes: ")
+    voc = ""
+    con = ""
+    for letra in mes:
+        if letra in "aeiou":
+            voc += letra + " "
+        else:
+            con += letra + " "
+    print("Vocales: ", voc)
+    print("Consonantes: ", con)
+def p_10():
+    mes = input("Ingresa el mes: ")
+    abc = "abcdefghijklmnopqrstuvwxyz"
+
+    for letra in mes.lower():
+        if letra in abc:
+            print(letra, "->", abc.index(letra) + 1)
+
+def main():
+    de_puno()
+    p_dos()
+    p_tres()
+    p_4()
+    p_5()
+    p_6()
+    cod = 1000115165
+    p_7()
+    p_8()
+    p_9()
+    p_10()
+main()
