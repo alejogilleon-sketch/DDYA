@@ -64,6 +64,44 @@ El ejercicio se encuentra en la carpeta correspondiente a la **Semana 2** del re
 
 La entrega se realizó mediante un **Pull Request (PR)** con dos revisores.
 
+# Laboratorio Semana 2
+
+## Introducción
+
+Durante la segunda semana del curso se trabajó el algoritmo de ordenamiento **Insertion Sort**, aplicándolo a un problema relacionado con la organización de precios de productos de una tienda.
+
+## Ejercicio: Organización de precios en una tienda
+
+Se desarrolló un programa que permite al usuario ingresar la cantidad de productos y registrar el precio de cada uno. Posteriormente, el programa permite seleccionar el tipo de ordenamiento que se desea realizar.
+
+## Punto 1. Orden ascendente
+
+Se implementó el ordenamiento de los precios de menor a mayor, con el objetivo de mostrar primero los productos más económicos.
+
+## Punto 2. Orden descendente
+
+Se implementó el ordenamiento de los precios de mayor a menor, con el objetivo de mostrar primero los productos más costosos.
+
+## Algoritmo utilizado
+
+Para organizar los precios se utilizó el algoritmo **Insertion Sort**, implementando tanto el ordenamiento ascendente como el descendente.
+
+## Tecnologías utilizadas
+
+- Python
+- Git
+- GitHub
+
+## Resultado
+
+Se desarrolló un programa capaz de recibir una cantidad variable de precios y organizarlos mediante el algoritmo **Insertion Sort**, permitiendo mostrar los resultados en orden ascendente o descendente.
+
+## Entrega
+
+El ejercicio se encuentra en la carpeta correspondiente a la **Semana 2** del repositorio de GitHub.
+
+La entrega se realizó mediante un **Pull Request (PR)** con dos revisores.
+
 ## Autor
 
 **Emmanuel Alejandro Gil León**
